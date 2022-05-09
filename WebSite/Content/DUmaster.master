@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DUMaster.master.cs" Inherits="Content_DUmaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="~/Content/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/CSS/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/CSS/MyCss.css" rel="stylesheet" />
+    <script src="~/Content/JS/bootstrap.bundle.min.js"></script>
+
+    <asp:ContentPlaceHolder id="cphHead" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div class="container">
+   <div class="row header">
+      <div class="col-md-3">
+         <br />
+            <asp:Image ID="imglogo" runat ="server" ImageUrl="https://www.darshan.ac.in/Content/media/DU-logo.svg" />
+      </div>
+      <div class="col-md-9" >
+            <div class ="row text-right">
+                <div class="col-md-12">
+                    <h1><b> Darshan University </b></h1>
+                </div>
+            </div>
+            <div class="row text-right">
+                <div class="col-md-12">
+                   <h3> Rajkot - Morbi Highway, Gujarat-363650, INDIA </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-right">
+                    <asp:HyperLink runat="server" ID="hlAbout" Text="About" NavigateUrl="~/DUwebsite/AboutDU.aspx"/> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="hlCareer" Text="Career" NavigateUrl="~/DUwebsite/Career.aspx" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="hlScholarShip" Text="ScholarShip" NavigateUrl="~/DUwebsite/ScholarShip.aspx" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="hlInfrastructure" Text="Infrastructure" NavigateUrl="~/DUwebsite/Infrastructure.aspx" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="hlNCC" Text="NCC" NavigateUrl="~/DUwebsite/NCC.aspx" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="hlCampusLife" Text="CampusLife" NavigateUrl="~/DUwebsite/CampusLife.aspx" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="hlLibrary" Text="Library" NavigateUrl="~/DUwebsite/Library.aspx" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="hlContact" Text="Contact" NavigateUrl="~/DUwebsite/Contact.aspx" />
+                </div>
+            </div>
+       </div>
+   </div>
+    <div class="row">
+        <div class="col-md-12">
+            <asp:ContentPlaceHolder id="cphMainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+     <br />
+     <br />
+     <br />
+    <br />
+
+    <div class="row footer">
+        <div class="col-md-12">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                    <asp:HyperLink runat="server" ID="HyperLink2" Text="About" NavigateUrl="#"/> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="HyperLink3" Text="Career" NavigateUrl="#"/> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="HyperLink4" Text="ScholarShip" NavigateUrl="#" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="HyperLink1" Text="Infrastructure" NavigateUrl="#" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="HyperLink7" Text="NCC" NavigateUrl="#" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="HyperLink6" Text="CampusLife" NavigateUrl="#" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="HyperLink8" Text="Library" NavigateUrl="#" /> &nbsp; &nbsp; | &nbsp; &nbsp;
+                    <asp:HyperLink runat="server" ID="HyperLink5" Text="Contact" NavigateUrl="#"/>
+                </div>
+             </div>
+             <div class="row">
+                 <div class="col-md-12 text-center">
+                      Darshan University
+                 </div>
+             </div>
+        </div>
+    </div>
+    
+  </div>
+  </form>
+</body>
+</html>
